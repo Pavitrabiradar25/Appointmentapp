@@ -17,4 +17,13 @@ class Patient(models.Model):
 	def __str__(self):
 		return self.Patient_name
 
- 
+class Appointment(models.Model):
+	Doctor_field=models.ForeignKey(Doctor,on_delete=models.CASCADE)
+	Patient_field=models.ForeignKey(Patient,on_delete=models.CASCADE)
+	date = models.DateField()
+
+
+
+
+
+

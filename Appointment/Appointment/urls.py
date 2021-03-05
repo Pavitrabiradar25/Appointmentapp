@@ -21,6 +21,7 @@ from rest_framework.routers import DefaultRouter
 router = DefaultRouter()
 router.register('Doctor',views.DoctorView)
 router.register('Patient',views.PatientView)
+router.register('Appointment',views.AppointmentView)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
